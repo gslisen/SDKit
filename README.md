@@ -1,5 +1,8 @@
 # SDKit
 简洁、高效的iOS开发“一站式”工具库
+
+gitHub Mac客户端不会使用的，请看这篇帖子： http://www.cnblogs.com/boai/p/5412952.html
+
 ##1.项目简介
 正在完善中，敬请期待。。。
 
