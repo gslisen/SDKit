@@ -357,5 +357,4 @@ typedef NS_ENUM(NSInteger, FontName)
 + (UIFont *)fontForFontName:(FontName)fontName
                        size:(CGFloat)fontSize;
 
-
 @end
