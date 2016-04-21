@@ -18,9 +18,10 @@
 		4824E0F61CC50A09008BF83F /* SDKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4824E0F51CC50A09008BF83F /* SDKitUITests.m */; };
 		48E115221CC5D1E30047DD3C /* UIView+SDViewToolsBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E115211CC5D1E30047DD3C /* UIView+SDViewToolsBasic.m */; };
 		48E115291CC615B20047DD3C /* NSArray+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E115251CC615B20047DD3C /* NSArray+SDKit.m */; };
-		48E1152A1CC615B20047DD3C /* NSMutableArray+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E115281CC615B20047DD3C /* NSMutableArray+SDKit.m */; };
-		48E1152E1CC615F20047DD3C /* UIFont+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E1152D1CC615F20047DD3C /* UIFont+SDKit.m */; };
 		9976754C1CC526BE0003E149 /* UIView+SDBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9976754B1CC526BE0003E149 /* UIView+SDBorder.m */; };
+		C4388D351CC761D600A6AF28 /* NSMutableArray+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4388D341CC761D600A6AF28 /* NSMutableArray+SDKit.m */; };
+		C4388D421CC78C0900A6AF28 /* UIFont+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4388D411CC78C0900A6AF28 /* UIFont+SDKit.m */; };
+		C4388D491CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4388D481CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,15 +63,17 @@
 		48E115211CC5D1E30047DD3C /* UIView+SDViewToolsBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDViewToolsBasic.m"; sourceTree = "<group>"; };
 		48E115241CC615B20047DD3C /* NSArray+SDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SDKit.h"; sourceTree = "<group>"; };
 		48E115251CC615B20047DD3C /* NSArray+SDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SDKit.m"; sourceTree = "<group>"; };
-		48E115271CC615B20047DD3C /* NSMutableArray+SDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SDKit.h"; sourceTree = "<group>"; };
-		48E115281CC615B20047DD3C /* NSMutableArray+SDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SDKit.m"; sourceTree = "<group>"; };
-		48E1152C1CC615F20047DD3C /* UIFont+SDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+SDKit.h"; sourceTree = "<group>"; };
-		48E1152D1CC615F20047DD3C /* UIFont+SDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SDKit.m"; sourceTree = "<group>"; };
 		9976754A1CC526BE0003E149 /* UIView+SDBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDBorder.h"; sourceTree = "<group>"; };
 		9976754B1CC526BE0003E149 /* UIView+SDBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDBorder.m"; sourceTree = "<group>"; };
 		9976754D1CC527B40003E149 /* SDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKit.h; sourceTree = "<group>"; };
 		9976754E1CC528530003E149 /* SDUIKitTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDUIKitTools.h; sourceTree = "<group>"; };
 		9976754F1CC528760003E149 /* SDFoundationTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDFoundationTools.h; sourceTree = "<group>"; };
+		C4388D331CC761D600A6AF28 /* NSMutableArray+SDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+SDKit.h"; path = "SDKit/SDKit/Foundation/NSMutableArray/NSMutableArray+SDKit.h"; sourceTree = SOURCE_ROOT; };
+		C4388D341CC761D600A6AF28 /* NSMutableArray+SDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+SDKit.m"; path = "SDKit/SDKit/Foundation/NSMutableArray/NSMutableArray+SDKit.m"; sourceTree = SOURCE_ROOT; };
+		C4388D401CC78C0900A6AF28 /* UIFont+SDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+SDKit.h"; sourceTree = "<group>"; };
+		C4388D411CC78C0900A6AF28 /* UIFont+SDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SDKit.m"; sourceTree = "<group>"; };
+		C4388D471CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+SDKit.h"; sourceTree = "<group>"; };
+		C4388D481CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+SDKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,19 +186,10 @@
 		48E115261CC615B20047DD3C /* NSMutableArray */ = {
 			isa = PBXGroup;
 			children = (
-				48E115271CC615B20047DD3C /* NSMutableArray+SDKit.h */,
-				48E115281CC615B20047DD3C /* NSMutableArray+SDKit.m */,
+				C4388D331CC761D600A6AF28 /* NSMutableArray+SDKit.h */,
+				C4388D341CC761D600A6AF28 /* NSMutableArray+SDKit.m */,
 			);
 			path = NSMutableArray;
-			sourceTree = "<group>";
-		};
-		48E1152B1CC615F20047DD3C /* UIFont */ = {
-			isa = PBXGroup;
-			children = (
-				48E1152C1CC615F20047DD3C /* UIFont+SDKit.h */,
-				48E1152D1CC615F20047DD3C /* UIFont+SDKit.m */,
-			);
-			path = UIFont;
 			sourceTree = "<group>";
 		};
 		9976752C1CC525A60003E149 /* SDKit */ = {
@@ -211,6 +205,7 @@
 		9976752D1CC525A60003E149 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				C4388D461CC78C5D00A6AF28 /* NSMutableAttributedString */,
 				48E115231CC615B20047DD3C /* NSArray */,
 				48E115261CC615B20047DD3C /* NSMutableArray */,
 				9976754F1CC528760003E149 /* SDFoundationTools.h */,
@@ -221,7 +216,7 @@
 		997675381CC525A60003E149 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				48E1152B1CC615F20047DD3C /* UIFont */,
+				C4388D3F1CC78C0900A6AF28 /* UIFont */,
 				48E1151F1CC5D19A0047DD3C /* ViewToolsBasic */,
 				997675441CC525A60003E149 /* UIView */,
 				9976754E1CC528530003E149 /* SDUIKitTools.h */,
@@ -236,6 +231,24 @@
 				9976754B1CC526BE0003E149 /* UIView+SDBorder.m */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		C4388D3F1CC78C0900A6AF28 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				C4388D401CC78C0900A6AF28 /* UIFont+SDKit.h */,
+				C4388D411CC78C0900A6AF28 /* UIFont+SDKit.m */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		C4388D461CC78C5D00A6AF28 /* NSMutableAttributedString */ = {
+			isa = PBXGroup;
+			children = (
+				C4388D471CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.h */,
+				C4388D481CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.m */,
+			);
+			path = NSMutableAttributedString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,14 +381,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4388D421CC78C0900A6AF28 /* UIFont+SDKit.m in Sources */,
 				4824E0D51CC50A08008BF83F /* ViewController.m in Sources */,
 				48E115291CC615B20047DD3C /* NSArray+SDKit.m in Sources */,
 				9976754C1CC526BE0003E149 /* UIView+SDBorder.m in Sources */,
 				4824E0DB1CC50A08008BF83F /* SDKit.xcdatamodeld in Sources */,
 				48E115221CC5D1E30047DD3C /* UIView+SDViewToolsBasic.m in Sources */,
-				48E1152A1CC615B20047DD3C /* NSMutableArray+SDKit.m in Sources */,
-				48E1152E1CC615F20047DD3C /* UIFont+SDKit.m in Sources */,
 				4824E0D21CC50A08008BF83F /* AppDelegate.m in Sources */,
+				C4388D491CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.m in Sources */,
+				C4388D351CC761D600A6AF28 /* NSMutableArray+SDKit.m in Sources */,
 				4824E0CF1CC50A08008BF83F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
