@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		345E10291CC8D4420010307A /* NSString+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 345E10281CC8D4420010307A /* NSString+SDKit.m */; };
 		4824E0CF1CC50A08008BF83F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4824E0CE1CC50A08008BF83F /* main.m */; };
 		4824E0D21CC50A08008BF83F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4824E0D11CC50A08008BF83F /* AppDelegate.m */; };
 		4824E0D51CC50A08008BF83F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4824E0D41CC50A08008BF83F /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		345E10271CC8D4420010307A /* NSString+SDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SDKit.h"; sourceTree = "<group>"; };
+		345E10281CC8D4420010307A /* NSString+SDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SDKit.m"; sourceTree = "<group>"; };
 		4824E0CA1CC50A08008BF83F /* SDKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4824E0CE1CC50A08008BF83F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4824E0D01CC50A08008BF83F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		345E10261CC8D4420010307A /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				345E10271CC8D4420010307A /* NSString+SDKit.h */,
+				345E10281CC8D4420010307A /* NSString+SDKit.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
 		4824E0C11CC50A07008BF83F = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +217,7 @@
 		9976752D1CC525A60003E149 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				345E10261CC8D4420010307A /* NSString */,
 				C4388D461CC78C5D00A6AF28 /* NSMutableAttributedString */,
 				48E115231CC615B20047DD3C /* NSArray */,
 				48E115261CC615B20047DD3C /* NSMutableArray */,
@@ -384,6 +397,7 @@
 				C4388D421CC78C0900A6AF28 /* UIFont+SDKit.m in Sources */,
 				4824E0D51CC50A08008BF83F /* ViewController.m in Sources */,
 				48E115291CC615B20047DD3C /* NSArray+SDKit.m in Sources */,
+				345E10291CC8D4420010307A /* NSString+SDKit.m in Sources */,
 				9976754C1CC526BE0003E149 /* UIView+SDBorder.m in Sources */,
 				4824E0DB1CC50A08008BF83F /* SDKit.xcdatamodeld in Sources */,
 				48E115221CC5D1E30047DD3C /* UIView+SDViewToolsBasic.m in Sources */,
