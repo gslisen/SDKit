@@ -35,17 +35,23 @@
         btn.centerX = self.view.width * 0.5;
         [self.view addSubview:btn];
         
-        if (idx == dotColors.count - 1) {
-            // 显示带文字的提示小圆点
-            [btn sd_showAlertDotWithText:@"新" textFontSize:10 topOffset:8 rightOffset:8];
-        } else if (idx < 3) {
+        if (idx < 2) {
             long wh = idx * 2 + 8;
             CGSize dotSize = CGSizeMake(wh, wh);
             // 显示纯色提示小圆点
             [btn sd_showAlertDotWithDotSize:dotSize topOffset:6 rightOffset:6]; // 显示提示小圆点，默认为红色
-        } else {
+        } else if (idx == dotColors.count - 1) {
             // 显示带文字的提示小圆点
-            [btn sd_showAlertDotWithText:[NSString stringWithFormat:@"%ld", idx] textFontSize:10 topOffset:8 rightOffset:8];
+            [btn sd_showAlertDotWithText:@"新" textFontSize:10 topOffset:8 rightOffset:8];
+        } else if (idx == dotColors.count - 2) {
+            // 显示带文字的提示小圆点
+            [btn sd_showAlertDotWithText:@"19" textFontSize:13 topOffset:8 rightOffset:8];
+        } else {
+            // 限制小圆点高度，文字内容过多会显示椭圆形状
+            btn.sd_alertDotMaxHeight = 17;
+            // 显示带文字的提示小圆点
+            [btn sd_showAlertDotWithText:@"101" textFontSize:13 topOffset:8 rightOffset:8];
+            
         }
         
         btn.sd_alertDotColor = [obj colorWithAlphaComponent:0.6];
@@ -54,7 +60,7 @@
 
 - (void)buttonClicked:(UIButton *)btn
 {
-    if (btn.tag < 3 || btn.tag == 4) {
+    if (btn.tag < 2 || btn.tag == 4) {
         // 隐藏小圆点
         [btn sd_hideAlertDot];
     } else {
@@ -63,7 +69,7 @@
         value--;
         if (value > 0) {
             // 显示带文字的提示小圆点
-            [btn sd_showAlertDotWithText:[NSString stringWithFormat:@"%d", value] textFontSize:10 topOffset:8 rightOffset:8];
+            [btn sd_showAlertDotWithText:[NSString stringWithFormat:@"%d", value] textFontSize:13 topOffset:8 rightOffset:8];
         } else {
             // 隐藏小圆点
             [btn sd_hideAlertDot];
