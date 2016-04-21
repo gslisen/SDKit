@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIView+SDAutoLayout.h"
 
 /** 
  将你需要给category添加的实例属性直接添加到这里
@@ -15,6 +16,7 @@
  */
 @interface SDViewToolsCategoryPropertiesManager : NSObject
 
+@property (nonatomic, strong) UIButton *alertDotButton;
 
 @end
 
@@ -25,5 +27,7 @@
 @interface UIView (SDViewToolsBasic)
 
 @property (nonatomic, readonly) SDViewToolsCategoryPropertiesManager *sd_categoryPropertiesManager;
+
+
 
 @end

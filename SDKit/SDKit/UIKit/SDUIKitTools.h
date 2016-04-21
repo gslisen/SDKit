@@ -9,5 +9,6 @@
 #ifndef SDUIKitTools_h
 #define SDUIKitTools_h
 
+#import "UIView+SDAlertDotView.h"
 
 #endif /* SDUIKitTools_h */
