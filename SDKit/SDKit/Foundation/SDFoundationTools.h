@@ -9,5 +9,9 @@
 #ifndef SDFoundationTools_h
 #define SDFoundationTools_h
 
+#import "NSArray+SDKit.h"
+#import "NSMutableAttributedString+SDKit.h"
+#import "NSMutableArray+SDKit.h"
+
 
 #endif /* SDFoundationTools_h */

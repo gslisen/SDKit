@@ -10,5 +10,6 @@
 #define SDKit_h
 
 #import "SDUIKitTools.h"
+#import "SDFoundationTools.h"
 
 #endif /* SDKit_h */
