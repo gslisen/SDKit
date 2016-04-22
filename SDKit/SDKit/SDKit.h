@@ -11,5 +11,6 @@
 
 #import "SDUIKitTools.h"
 #import "SDFoundationTools.h"
+#import "SDLog.h"
 
 #endif /* SDKit_h */

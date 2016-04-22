@@ -8,6 +8,7 @@
 
 #import "UIFont+SDKit.h"
 #import "NSMutableArray+SDKit.h"
+#import "SDLog.h"
 
 @implementation UIFont (SDKit)
 /* 打印控制台所有的字体系列和字体的名字 */
@@ -22,7 +23,7 @@
         NSString *fontFamily = [fontFamilies objectAtIndex:i];
         // 返回的指定字体系列的字体数组
         NSArray *fontNames = [UIFont fontNamesForFamilyName:[fontFamilies objectAtIndex:i]];
-        NSLog(@"%@: %@", fontFamily, fontNames);
+        SDLog(@"%@: %@", fontFamily, fontNames);
     }
 }
 
@@ -258,7 +259,7 @@
         default:
             break;
     }
-    NSLog(@"%@", fontNames);
+    SDLog(@"%@", fontNames);
     return fontNames;
 }
 

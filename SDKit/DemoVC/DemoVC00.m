@@ -35,6 +35,8 @@
         btn.centerX = self.view.width * 0.5;
         [self.view addSubview:btn];
         
+        SDLog(@"测试打印信息2：%@！", btn);
+
         if (idx < 2) {
             long wh = idx * 2 + 8;
             CGSize dotSize = CGSizeMake(wh, wh);
@@ -51,7 +53,6 @@
             btn.sd_alertDotMaxHeight = 17;
             // 显示带文字的提示小圆点
             [btn sd_showAlertDotWithText:@"101" textFontSize:13 topOffset:8 rightOffset:8];
-            
         }
         
         btn.sd_alertDotColor = [obj colorWithAlphaComponent:0.6];

@@ -27,6 +27,7 @@
 		C4388D351CC761D600A6AF28 /* NSMutableArray+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4388D341CC761D600A6AF28 /* NSMutableArray+SDKit.m */; };
 		C4388D421CC78C0900A6AF28 /* UIFont+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4388D411CC78C0900A6AF28 /* UIFont+SDKit.m */; };
 		C4388D491CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4388D481CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.m */; };
+		C4B7A0301CC9E7D30098DF2B /* SDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B7A02F1CC9E7D30098DF2B /* SDLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		C4388D411CC78C0900A6AF28 /* UIFont+SDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+SDKit.m"; sourceTree = "<group>"; };
 		C4388D471CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+SDKit.h"; sourceTree = "<group>"; };
 		C4388D481CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+SDKit.m"; sourceTree = "<group>"; };
+		C4B7A02E1CC9E7D30098DF2B /* SDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLog.h; sourceTree = "<group>"; };
+		C4B7A02F1CC9E7D30098DF2B /* SDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +240,8 @@
 		48E2FBAC1CC8DE1B0089F1D4 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				C4B7A02E1CC9E7D30098DF2B /* SDLog.h */,
+				C4B7A02F1CC9E7D30098DF2B /* SDLog.m */,
 				48E2FBAD1CC8DE1B0089F1D4 /* AppDelegate.h */,
 				48E2FBAE1CC8DE1B0089F1D4 /* AppDelegate.m */,
 				48E2FBB01CC8DE1B0089F1D4 /* main.m */,
@@ -443,6 +448,7 @@
 				9976754C1CC526BE0003E149 /* UIView+SDBorder.m in Sources */,
 				48E115221CC5D1E30047DD3C /* UIView+SDViewToolsBasic.m in Sources */,
 				48E2FBBE1CC8F0940089F1D4 /* DemoVC00.m in Sources */,
+				C4B7A0301CC9E7D30098DF2B /* SDLog.m in Sources */,
 				C4388D491CC78C5D00A6AF28 /* NSMutableAttributedString+SDKit.m in Sources */,
 				48E2FB9F1CC8D10E0089F1D4 /* UIView+SDAlertDotView.m in Sources */,
 				48E2FBAB1CC8DDAC0089F1D4 /* SDKitDemoHomeViewController.m in Sources */,
