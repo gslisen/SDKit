@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIView+SDAutoLayout.h"
 
 /** 
  将你需要给category添加的实例属性直接添加到这里
@@ -15,6 +16,10 @@
  */
 @interface SDViewToolsCategoryPropertiesManager : NSObject
 
+@property (nonatomic, strong) UIButton *alertDotButton;
+
+/** 当文字较多时maxHeight限制小圆点高度从而呈现椭圆式形状 */
+@property (nonatomic) CGFloat sd_alertDotMaxHeight;
 
 @end
 
@@ -25,5 +30,7 @@
 @interface UIView (SDViewToolsBasic)
 
 @property (nonatomic, readonly) SDViewToolsCategoryPropertiesManager *sd_categoryPropertiesManager;
+
+
 
 @end
