@@ -11,6 +11,14 @@
 
 @implementation SDViewToolsCategoryPropertiesManager
 
+- (UIButton *)alertDotButton
+{
+    if (!_alertDotButton) {
+        _alertDotButton = [UIButton new];
+    }
+    return _alertDotButton;
+}
+
 @end
 
 @implementation UIView (SDViewToolsBasic)
