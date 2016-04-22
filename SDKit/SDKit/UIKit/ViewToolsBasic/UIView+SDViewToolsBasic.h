@@ -18,6 +18,9 @@
 
 @property (nonatomic, strong) UIButton *alertDotButton;
 
+/** 当文字较多时maxHeight限制小圆点高度从而呈现椭圆式形状 */
+@property (nonatomic) CGFloat sd_alertDotMaxHeight;
+
 @end
 
 

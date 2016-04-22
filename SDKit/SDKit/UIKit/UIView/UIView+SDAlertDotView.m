@@ -28,8 +28,11 @@
     dot.left = self.width - dot.width - rightOffset;
     dot.top = topOffset;
     
+    if (self.sd_alertDotMaxHeight > 0 && dot.height > self.sd_alertDotMaxHeight) {
+        dot.height = self.sd_alertDotMaxHeight;
+    }
     
-    dot.layer.cornerRadius = dot.width * 0.5;
+    dot.layer.cornerRadius = dot.height * 0.5;
     dot.clipsToBounds = YES;
     
     
@@ -41,7 +44,7 @@
 {
     self.sd_alertDotText = text;
     self.sd_alertDotButton.titleLabel.font = [UIFont systemFontOfSize:fontSize];
-    [self sd_showAlertDotWithDotSize:[self sizeWithCurrentTitleAndFontSize:fontSize] topOffset:topOffset rightOffset:rightOffset];
+    [self sd_showAlertDotWithDotSize:[self sizeWithText:text fontSize:fontSize] topOffset:topOffset rightOffset:rightOffset];
 }
 
 - (void)sd_hideAlertDot
@@ -93,19 +96,28 @@
     [self.sd_alertDotButton setTitleColor:sd_alertDotTextColor forState:UIControlStateNormal];
 }
 
-- (CGSize)sizeWithCurrentTitleAndFontSize:(CGFloat)fontSize
+- (CGSize)sizeWithText:(NSString *)text fontSize:(CGFloat)fontSize
 {
-    CGRect rect = [self.sd_alertDotButton.currentTitle boundingRectWithSize:CGSizeMake(MAXFLOAT, self.sd_alertDotButton.titleLabel.font.lineHeight) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName : self.sd_alertDotButton.titleLabel.font} context:nil];
+    CGRect rect = [text boundingRectWithSize:CGSizeMake(MAXFLOAT, self.sd_alertDotButton.titleLabel.font.lineHeight) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName : self.sd_alertDotButton.titleLabel.font} context:nil];
     CGSize size = rect.size;
+    size.width += fontSize * 0.6;
     CGFloat wh = MAX(size.height, size.width);
     if (wh < 8) {
         wh = 8;
-    } else {
-        wh += fontSize * 0.5;
     }
     size.height = wh;
     size.width = wh;
     return size;
+}
+
+- (void)setSd_alertDotMaxHeight:(CGFloat)sd_alertDotMaxHeight
+{
+    self.sd_categoryPropertiesManager.sd_alertDotMaxHeight = sd_alertDotMaxHeight;
+}
+
+- (CGFloat)sd_alertDotMaxHeight
+{
+    return self.sd_categoryPropertiesManager.sd_alertDotMaxHeight;
 }
 
 @end

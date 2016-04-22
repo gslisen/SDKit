@@ -37,4 +37,7 @@
 /** 设置提示小圆点显示的文字的颜色 */
 @property (nonatomic) UIColor *sd_alertDotTextColor;
 
+/** 当文字较多时maxHeight限制小圆点高度从而呈现椭圆式形状 */
+@property (nonatomic) CGFloat sd_alertDotMaxHeight;
+
 @end
