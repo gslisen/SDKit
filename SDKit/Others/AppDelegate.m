@@ -24,6 +24,9 @@
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[SDKitDemoHomeViewController new]];
     [self.window makeKeyAndVisible];
     
+    
+    SDLog(@" 测试打印信息！Unresolved error ");
+
     return YES;
 }
 
