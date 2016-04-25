@@ -6,6 +6,8 @@ gitHub Mac客户端不会使用的，请看这篇帖子： http://www.cnblogs.co
 ##1.项目简介
 正在完善中，敬请期待。。。
 
+欢迎大家PR代码给我们，期待与你一起完善SDKit
+
 UI类的小伙伴儿们，都来fork我的  https://github.com/boai/SDKit
 
 NS类的 都来fork我的https://github.com/HRongChen/SDKit.git
