@@ -23,6 +23,7 @@
 		48E2FBB81CC8DE5C0089F1D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48E2FBB71CC8DE5C0089F1D4 /* Info.plist */; };
 		48E2FBBB1CC8EC7C0089F1D4 /* DemoVC01.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E2FBBA1CC8EC7C0089F1D4 /* DemoVC01.m */; };
 		48E2FBBE1CC8F0940089F1D4 /* DemoVC00.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E2FBBD1CC8F0940089F1D4 /* DemoVC00.m */; };
+		909E3F061CD2FEF10073CA85 /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 909E3F051CD2FEF10073CA85 /* UIViewController+BackButtonHandler.m */; };
 		9976754C1CC526BE0003E149 /* UIView+SDBorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9976754B1CC526BE0003E149 /* UIView+SDBorder.m */; };
 		C4388D351CC761D600A6AF28 /* NSMutableArray+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4388D341CC761D600A6AF28 /* NSMutableArray+SDKit.m */; };
 		C4388D421CC78C0900A6AF28 /* UIFont+SDKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C4388D411CC78C0900A6AF28 /* UIFont+SDKit.m */; };
@@ -78,6 +79,8 @@
 		48E2FBBA1CC8EC7C0089F1D4 /* DemoVC01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVC01.m; sourceTree = "<group>"; };
 		48E2FBBC1CC8F0940089F1D4 /* DemoVC00.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVC00.h; sourceTree = "<group>"; };
 		48E2FBBD1CC8F0940089F1D4 /* DemoVC00.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVC00.m; sourceTree = "<group>"; };
+		909E3F041CD2FEF10073CA85 /* UIViewController+BackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BackButtonHandler.h"; sourceTree = "<group>"; };
+		909E3F051CD2FEF10073CA85 /* UIViewController+BackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BackButtonHandler.m"; sourceTree = "<group>"; };
 		9976754A1CC526BE0003E149 /* UIView+SDBorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDBorder.h"; sourceTree = "<group>"; };
 		9976754B1CC526BE0003E149 /* UIView+SDBorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDBorder.m"; sourceTree = "<group>"; };
 		9976754D1CC527B40003E149 /* SDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKit.h; sourceTree = "<group>"; };
@@ -250,6 +253,16 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
+		909E3F031CD2FEF10073CA85 /* UIViewController+BackButtonHandler */ = {
+			isa = PBXGroup;
+			children = (
+				909E3F041CD2FEF10073CA85 /* UIViewController+BackButtonHandler.h */,
+				909E3F051CD2FEF10073CA85 /* UIViewController+BackButtonHandler.m */,
+			);
+			name = "UIViewController+BackButtonHandler";
+			path = "UIView/UIViewController+BackButtonHandler";
+			sourceTree = "<group>";
+		};
 		9976752C1CC525A60003E149 /* SDKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +287,7 @@
 		997675381CC525A60003E149 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				909E3F031CD2FEF10073CA85 /* UIViewController+BackButtonHandler */,
 				C4388D3F1CC78C0900A6AF28 /* UIFont */,
 				48E1151F1CC5D19A0047DD3C /* ViewToolsBasic */,
 				997675441CC525A60003E149 /* UIView */,
@@ -454,6 +468,7 @@
 				48E2FBAB1CC8DDAC0089F1D4 /* SDKitDemoHomeViewController.m in Sources */,
 				48E2FBB61CC8DE1B0089F1D4 /* SDKit.xcdatamodeld in Sources */,
 				C4388D351CC761D600A6AF28 /* NSMutableArray+SDKit.m in Sources */,
+				909E3F061CD2FEF10073CA85 /* UIViewController+BackButtonHandler.m in Sources */,
 				48E2FBA71CC8D43B0089F1D4 /* UIView+SDAutoLayout.m in Sources */,
 				48E2FBB51CC8DE1B0089F1D4 /* main.m in Sources */,
 				48E2FBA61CC8D43B0089F1D4 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
